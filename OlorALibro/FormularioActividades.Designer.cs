@@ -170,6 +170,7 @@
             // textBoxDescripcionActividades
             // 
             this.textBoxDescripcionActividades.Location = new System.Drawing.Point(158, 262);
+            this.textBoxDescripcionActividades.Multiline = true;
             this.textBoxDescripcionActividades.Name = "textBoxDescripcionActividades";
             this.textBoxDescripcionActividades.Size = new System.Drawing.Size(200, 20);
             this.textBoxDescripcionActividades.TabIndex = 26;
