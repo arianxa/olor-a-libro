@@ -58,6 +58,12 @@
     <Compile Include="FormPrincipalLibrerias.Designer.cs">
       <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRellenarLibrerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRellenarLibrerias.Designer.cs">
+      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
