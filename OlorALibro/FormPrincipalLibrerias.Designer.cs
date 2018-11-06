@@ -40,6 +40,7 @@
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombrecontacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipalLibrerias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,12 +65,15 @@
             // 
             // buttonAñadir
             // 
+            this.buttonAñadir.AccessibleDescription = "";
+            this.buttonAñadir.AccessibleName = "";
             this.buttonAñadir.ImageIndex = 2;
             this.buttonAñadir.ImageList = this.imageListPrincipalLibrerias;
             this.buttonAñadir.Location = new System.Drawing.Point(103, 148);
             this.buttonAñadir.Name = "buttonAñadir";
             this.buttonAñadir.Size = new System.Drawing.Size(63, 42);
             this.buttonAñadir.TabIndex = 3;
+            this.buttonAñadir.Tag = "";
             this.buttonAñadir.UseVisualStyleBackColor = true;
             this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
             // 
@@ -177,5 +181,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombrecontacto;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

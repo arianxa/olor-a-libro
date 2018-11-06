@@ -30,10 +30,10 @@ namespace OlorALibro
         private void FormPrincipalLibrerias_Load(object sender, EventArgs e)
         {
 
-            //string stringArchivo = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + "\\pelis.json";
-
+         
+            tools();
             if (File.Exists("libreriasjson.json"))
-            {// te lo busca en debug por defecto 
+            {
                 JArray jarrayLibreria = JArray.Parse(File.ReadAllText("libreriasjson.json"));
                 libreri = jarrayLibreria.ToObject<List<Libreria>>();
 
@@ -53,6 +53,8 @@ namespace OlorALibro
         }
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
+
+           
             FormRellenarLibrerias libreria = new FormRellenarLibrerias(libreri);
             libreria.ShowDialog();
             guardarJson();
@@ -61,6 +63,7 @@ namespace OlorALibro
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
+           
             libreri.Remove((Libreria)dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem);
 
             dataGridViewPrincipalLibrerias.DataSource = null;
@@ -71,8 +74,13 @@ namespace OlorALibro
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
-            FormRellenarLibrerias libreria = new FormRellenarLibrerias(libreri);
-            libreria.ShowDialog();
+            Libreria libreria = (Libreria)dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;
+           
+            //FormRellenarLibrerias libreria = new FormRellenarLibrerias();
+            //libreria =(Libreria) dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;
+
+            //libreria.ShowDialog();
+
         }
         private void guardarJson()
         {
@@ -80,11 +88,17 @@ namespace OlorALibro
             JArray jarrayLibreria = (JArray)JToken.FromObject(libreri);
             StreamWriter fichero = File.CreateText("libreriasjson.json");
             JsonTextWriter jsonWriter = new JsonTextWriter(fichero);
-
             jarrayLibreria.WriteTo(jsonWriter);
             jsonWriter.Close();
             MessageBox.Show("Guardado Correctamente", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+        }
+        private void tools()
+        {
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(buttonAñadir, "Añadir");
+            toolTip1.SetToolTip(buttonEliminar, "Eliminar");
+            toolTip1.SetToolTip(buttonEditar, "Editar");
         }
     }
 }
