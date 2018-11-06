@@ -71,6 +71,7 @@
             this.buttonAñadir.Size = new System.Drawing.Size(63, 42);
             this.buttonAñadir.TabIndex = 3;
             this.buttonAñadir.UseVisualStyleBackColor = true;
+            this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
             // 
             // buttonEliminar
             // 
@@ -83,6 +84,7 @@
             this.buttonEliminar.TabIndex = 4;
             this.buttonEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // buttonEditar
             // 
@@ -94,6 +96,7 @@
             this.buttonEditar.Size = new System.Drawing.Size(62, 42);
             this.buttonEditar.TabIndex = 5;
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // dataGridViewPrincipalLibrerias
             // 
@@ -110,29 +113,34 @@
             this.dataGridViewPrincipalLibrerias.Name = "dataGridViewPrincipalLibrerias";
             this.dataGridViewPrincipalLibrerias.ReadOnly = true;
             this.dataGridViewPrincipalLibrerias.RowTemplate.Height = 29;
+            this.dataGridViewPrincipalLibrerias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPrincipalLibrerias.Size = new System.Drawing.Size(645, 262);
-            this.dataGridViewPrincipalLibrerias.TabIndex = 6;
+            this.dataGridViewPrincipalLibrerias.TabIndex = 1;
             // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "nombre";
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             // 
             // direccion
             // 
+            this.direccion.DataPropertyName = "direccion";
             this.direccion.HeaderText = "Direccion";
             this.direccion.Name = "direccion";
             this.direccion.ReadOnly = true;
             // 
             // telefono
             // 
+            this.telefono.DataPropertyName = "telefono";
             this.telefono.HeaderText = "Telefono";
             this.telefono.Name = "telefono";
             this.telefono.ReadOnly = true;
             // 
             // nombrecontacto
             // 
+            this.nombrecontacto.DataPropertyName = "nombreContacto";
             this.nombrecontacto.HeaderText = "Nombre de Contacto";
             this.nombrecontacto.Name = "nombrecontacto";
             this.nombrecontacto.ReadOnly = true;
@@ -149,6 +157,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FormPrincipalLibrerias";
             this.Text = "FormPrincipalLibrerias";
+            this.Activated += new System.EventHandler(this.FormPrincipalLibrerias_Activated);
+            this.Load += new System.EventHandler(this.FormPrincipalLibrerias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipalLibrerias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
