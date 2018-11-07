@@ -74,7 +74,10 @@ namespace OlorALibro
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
-            Libreria libreria = (Libreria)dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;
+            Libreria l = (Libreria)dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;
+            FormModificarLibreria f = new FormModificarLibreria(l);
+            f.Text = "Formulario Librerias";
+            f.ShowDialog();
            
             //FormRellenarLibrerias libreria = new FormRellenarLibrerias();
             //libreria =(Libreria) dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;

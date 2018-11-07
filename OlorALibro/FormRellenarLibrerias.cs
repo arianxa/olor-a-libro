@@ -36,8 +36,11 @@ namespace OlorALibro
             l.telefono = int.Parse(textBoxtelefono.Text);
             l.nombreContacto = textBoxnombrecontacto.Text;
             GuardadoYErrores(l);// le pasamos la libreria
+
+
            
-           // datos repetidos
+           
+          
           
 
             //this.Close();
@@ -58,6 +61,11 @@ namespace OlorALibro
 
 
             }
+            else if (libreria.Contains(l))
+      
+                {
+                    MessageBox.Show("Esta libreria ya esta creada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             else
             {
                 libreria.Add(l);

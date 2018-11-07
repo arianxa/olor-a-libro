@@ -13,22 +13,18 @@ namespace OlorALibro
         public int telefono { get; set; }
         public string nombreContacto { get; set; }
 
-        public bool Equals(Libreria other)
+        public bool Equals(Libreria l)
         {
-            throw new NotImplementedException();
+            bool igual = false;
+            if (l.nombre == this.nombre && l.direccion == this.direccion)
+            {
+
+                igual = true;
+
+            }
+            return igual;
         }
     }
 
-/*    public bool Equals(Libreria l)
-    {
-
-        bool igual = false;
-        if(l.nombre == this.nombre && l.direccion == this.direccion )
-        {
-
-            igual = true;
-
-        }
-        return igual;*/
-    }
+  
 }
