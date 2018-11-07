@@ -57,7 +57,7 @@ namespace OlorALibro
            
             FormRellenarLibrerias libreria = new FormRellenarLibrerias(libreri);
             libreria.ShowDialog();
-            guardarJson();
+    
            
         }
 
@@ -68,7 +68,7 @@ namespace OlorALibro
 
             dataGridViewPrincipalLibrerias.DataSource = null;
             dataGridViewPrincipalLibrerias.DataSource = libreri;
-            guardarJson();
+         
 
         }
 
@@ -84,13 +84,13 @@ namespace OlorALibro
         }
         private void guardarJson()
         {
-
+          
             JArray jarrayLibreria = (JArray)JToken.FromObject(libreri);
             StreamWriter fichero = File.CreateText("libreriasjson.json");
             JsonTextWriter jsonWriter = new JsonTextWriter(fichero);
             jarrayLibreria.WriteTo(jsonWriter);
             jsonWriter.Close();
-            MessageBox.Show("Guardado Correctamente", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            
 
         }
         private void tools()
@@ -99,6 +99,17 @@ namespace OlorALibro
             toolTip1.SetToolTip(buttonAñadir, "Añadir");
             toolTip1.SetToolTip(buttonEliminar, "Eliminar");
             toolTip1.SetToolTip(buttonEditar, "Editar");
+        }
+
+        private void FormPrincipalLibrerias_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultado;
+            resultado = MessageBox.Show("Quieres guardar antes de salir? ", "MENSAJE", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                guardarJson();
+            }
+    
         }
     }
 }

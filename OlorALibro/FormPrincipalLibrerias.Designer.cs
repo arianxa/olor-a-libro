@@ -153,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(789, 511);
             this.Controls.Add(this.dataGridViewPrincipalLibrerias);
             this.Controls.Add(this.buttonEditar);
@@ -162,6 +163,7 @@
             this.Name = "FormPrincipalLibrerias";
             this.Text = "FormPrincipalLibrerias";
             this.Activated += new System.EventHandler(this.FormPrincipalLibrerias_Activated);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipalLibrerias_FormClosing);
             this.Load += new System.EventHandler(this.FormPrincipalLibrerias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipalLibrerias)).EndInit();
             this.ResumeLayout(false);
