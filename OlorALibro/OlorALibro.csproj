@@ -65,7 +65,6 @@
     <Compile Include="FormRellenarLibrerias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Actividad.cs" />
     <Compile Include="FormularioModificarActividades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,12 +81,6 @@
     </Compile>
     <Compile Include="FormularioPrincipalActividades.Designer.cs">
       <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUsuarios.Designer.cs">
-      <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Libreria.cs" />
     <Compile Include="Program.cs" />
