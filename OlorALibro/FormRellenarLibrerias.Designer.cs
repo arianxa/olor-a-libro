@@ -68,6 +68,7 @@
             this.textBoxnombre.Name = "textBoxnombre";
             this.textBoxnombre.Size = new System.Drawing.Size(165, 27);
             this.textBoxnombre.TabIndex = 3;
+            this.textBoxnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxnombre_KeyPress);
             // 
             // labelNombre
             // 

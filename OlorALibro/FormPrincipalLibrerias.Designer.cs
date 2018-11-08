@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 55);
+            this.label1.Location = new System.Drawing.Point(269, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 74);
             this.label1.TabIndex = 0;
@@ -76,7 +76,7 @@
             this.buttonAñadir.AccessibleName = "";
             this.buttonAñadir.ImageIndex = 2;
             this.buttonAñadir.ImageList = this.imageListPrincipalLibrerias;
-            this.buttonAñadir.Location = new System.Drawing.Point(103, 148);
+            this.buttonAñadir.Location = new System.Drawing.Point(8, 221);
             this.buttonAñadir.Name = "buttonAñadir";
             this.buttonAñadir.Size = new System.Drawing.Size(63, 42);
             this.buttonAñadir.TabIndex = 3;
@@ -89,7 +89,7 @@
             this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEliminar.ImageIndex = 1;
             this.buttonEliminar.ImageList = this.imageListPrincipalLibrerias;
-            this.buttonEliminar.Location = new System.Drawing.Point(172, 148);
+            this.buttonEliminar.Location = new System.Drawing.Point(77, 221);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(61, 42);
             this.buttonEliminar.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             this.buttonEditar.ImageIndex = 0;
             this.buttonEditar.ImageList = this.imageListPrincipalLibrerias;
-            this.buttonEditar.Location = new System.Drawing.Point(239, 148);
+            this.buttonEditar.Location = new System.Drawing.Point(144, 221);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonEditar.Size = new System.Drawing.Size(62, 42);
@@ -159,7 +159,7 @@
             // 
             // menuStripLibrerias
             // 
-            this.menuStripLibrerias.BackColor = System.Drawing.SystemColors.Info;
+            this.menuStripLibrerias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.menuStripLibrerias.ImageScalingSize = new System.Drawing.Size(26, 26);
             this.menuStripLibrerias.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.principalToolStripMenuItem,
@@ -182,7 +182,7 @@
             // libreriasToolStripMenuItem
             // 
             this.libreriasToolStripMenuItem.Name = "libreriasToolStripMenuItem";
-            this.libreriasToolStripMenuItem.Size = new System.Drawing.Size(96, 30);
+            this.libreriasToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
             this.libreriasToolStripMenuItem.Text = "Librerias";
             this.libreriasToolStripMenuItem.Click += new System.EventHandler(this.libreriasToolStripMenuItem_Click);
             // 
@@ -209,6 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(789, 511);
             this.Controls.Add(this.dataGridViewPrincipalLibrerias);
             this.Controls.Add(this.buttonEditar);

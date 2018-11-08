@@ -73,5 +73,21 @@ namespace OlorALibro
 
             }
         }
+
+        private void textBoxnombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("solo se permiten letras");
+            }
+
+        }
+
+        private void comprobarletras()
+        {
+            
+
+        }
     }
 }
