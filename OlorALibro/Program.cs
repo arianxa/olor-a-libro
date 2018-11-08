@@ -16,6 +16,7 @@ namespace OlorALibro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FormularioPrincipalActividades());
             Application.Run(new FormPrincipalLibrerias());
         }
     }
