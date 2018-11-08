@@ -23,6 +23,7 @@ namespace OlorALibro
             InitializeComponent();
         }
 
+
         public FormularioActividades(List<Actividad> act)
         {
             InitializeComponent();
