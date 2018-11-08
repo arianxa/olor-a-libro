@@ -63,6 +63,8 @@
       <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRellenarLibrerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Actividad.cs" />
     <Compile Include="FormularioModificarActividades.cs">
       <SubType>Form</SubType>
@@ -70,17 +72,14 @@
     <Compile Include="FormularioModificarActividades.Designer.cs">
       <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormularioActividades.cs" />
     <Compile Include="FormularioActividades.Designer.cs">
       <DependentUpon>FormularioActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioPrincipalActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormularioPrincipalActividades.cs" />
     <Compile Include="FormRellenarLibrerias.Designer.cs">
       <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioPrincipalActividades.Designer.cs">
       <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
     </Compile>
