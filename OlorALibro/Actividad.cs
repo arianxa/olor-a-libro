@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OlorALibro
 {
-    class Actividad
+    public class Actividad
     {
         public string nombre { get; set; }
         public DateTime fechaInicio { get; set; }

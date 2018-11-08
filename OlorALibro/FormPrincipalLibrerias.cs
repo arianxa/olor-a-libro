@@ -63,7 +63,6 @@ namespace OlorALibro
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-           
             libreri.Remove((Libreria)dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem);
 
             dataGridViewPrincipalLibrerias.DataSource = null;
