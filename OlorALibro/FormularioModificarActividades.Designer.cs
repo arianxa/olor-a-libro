@@ -64,8 +64,15 @@
             // 
             this.listBoxCategoriasModificarActividades.FormattingEnabled = true;
             this.listBoxCategoriasModificarActividades.Items.AddRange(new object[] {
-            "Infantil",
-            "Adultos"});
+            "Actividades infantiles",
+            "Actividades adultos",
+            "Tertulias",
+            "Firmas de libros",
+            "Concursos",
+            "Club de lectura",
+            "Dias/semanas tematicas",
+            "Extraescolares",
+            "Repaso"});
             this.listBoxCategoriasModificarActividades.Location = new System.Drawing.Point(151, 144);
             this.listBoxCategoriasModificarActividades.Name = "listBoxCategoriasModificarActividades";
             this.listBoxCategoriasModificarActividades.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
