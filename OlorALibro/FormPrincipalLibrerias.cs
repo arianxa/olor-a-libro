@@ -24,7 +24,7 @@ namespace OlorALibro
         private void FormPrincipalLibrerias_Activated(object sender, EventArgs e)
         {
             dataGridViewPrincipalLibrerias.DataSource = null;
-         dataGridViewPrincipalLibrerias.DataSource = libreri;
+          dataGridViewPrincipalLibrerias.DataSource = libreri;
         }
 
         private void FormPrincipalLibrerias_Load(object sender, EventArgs e)

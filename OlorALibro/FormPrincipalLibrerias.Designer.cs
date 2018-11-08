@@ -120,12 +120,13 @@
             this.direccion,
             this.telefono,
             this.nombrecontacto});
-            this.dataGridViewPrincipalLibrerias.Location = new System.Drawing.Point(103, 223);
+            this.dataGridViewPrincipalLibrerias.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewPrincipalLibrerias.Location = new System.Drawing.Point(0, 279);
             this.dataGridViewPrincipalLibrerias.Name = "dataGridViewPrincipalLibrerias";
             this.dataGridViewPrincipalLibrerias.ReadOnly = true;
             this.dataGridViewPrincipalLibrerias.RowTemplate.Height = 29;
             this.dataGridViewPrincipalLibrerias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPrincipalLibrerias.Size = new System.Drawing.Size(645, 262);
+            this.dataGridViewPrincipalLibrerias.Size = new System.Drawing.Size(789, 232);
             this.dataGridViewPrincipalLibrerias.TabIndex = 1;
             // 
             // Nombre
@@ -168,7 +169,7 @@
             this.actividadesToolStripMenuItem});
             this.menuStripLibrerias.Location = new System.Drawing.Point(0, 0);
             this.menuStripLibrerias.Name = "menuStripLibrerias";
-            this.menuStripLibrerias.Size = new System.Drawing.Size(789, 34);
+            this.menuStripLibrerias.Size = new System.Drawing.Size(789, 33);
             this.menuStripLibrerias.TabIndex = 6;
             this.menuStripLibrerias.Text = "menuStrip1";
             // 
