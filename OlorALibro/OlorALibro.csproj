@@ -50,6 +50,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormModificarLibreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarLibreria.Designer.cs">
+      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipalLibrerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipalLibrerias.Designer.cs">
+      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRellenarLibrerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Actividad.cs" />
     <Compile Include="FormularioModificarActividades.cs">
       <SubType>Form</SubType>
@@ -57,14 +72,13 @@
     <Compile Include="FormularioModificarActividades.Designer.cs">
       <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormularioActividades.cs" />
     <Compile Include="FormularioActividades.Designer.cs">
       <DependentUpon>FormularioActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioPrincipalActividades.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FormularioPrincipalActividades.cs" />
+    <Compile Include="FormRellenarLibrerias.Designer.cs">
+      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioPrincipalActividades.Designer.cs">
       <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
@@ -75,8 +89,18 @@
     <Compile Include="FormUsuarios.Designer.cs">
       <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libreria.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormModificarLibreria.resx">
+      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipalLibrerias.resx">
+      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRellenarLibrerias.resx">
+      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioModificarActividades.resx">
       <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
     </EmbeddedResource>
