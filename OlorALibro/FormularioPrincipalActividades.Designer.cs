@@ -111,7 +111,7 @@
             this.labelTituloActividades.Location = new System.Drawing.Point(141, 9);
             this.labelTituloActividades.Name = "labelTituloActividades";
             this.labelTituloActividades.Padding = new System.Windows.Forms.Padding(20, 5, 10, 10);
-            this.labelTituloActividades.Size = new System.Drawing.Size(426, 88);
+            this.labelTituloActividades.Size = new System.Drawing.Size(428, 88);
             this.labelTituloActividades.TabIndex = 7;
             this.labelTituloActividades.Text = "ACTIVIDADES";
             // 
