@@ -78,6 +78,7 @@ namespace OlorALibro
             FormModificarLibreria f = new FormModificarLibreria(l);
             f.Text = "Formulario Librerias";
             f.ShowDialog();
+         
            
             //FormRellenarLibrerias libreria = new FormRellenarLibrerias();
             //libreria =(Libreria) dataGridViewPrincipalLibrerias.SelectedRows[0].DataBoundItem;
@@ -113,6 +114,13 @@ namespace OlorALibro
                 guardarJson();
             }
     
+        }
+
+        private void libreriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPrincipalLibrerias libreria = new FormPrincipalLibrerias();
+                
+            libreria.ShowDialog();
         }
     }
 }

@@ -41,14 +41,21 @@
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombrecontacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStripLibrerias = new System.Windows.Forms.MenuStrip();
+            this.principalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.libreriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosDeRedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipalLibrerias)).BeginInit();
+            this.menuStripLibrerias.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 28);
+            this.label1.Location = new System.Drawing.Point(278, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 74);
             this.label1.TabIndex = 0;
@@ -149,6 +156,53 @@
             this.nombrecontacto.Name = "nombrecontacto";
             this.nombrecontacto.ReadOnly = true;
             // 
+            // menuStripLibrerias
+            // 
+            this.menuStripLibrerias.BackColor = System.Drawing.SystemColors.Info;
+            this.menuStripLibrerias.ImageScalingSize = new System.Drawing.Size(26, 26);
+            this.menuStripLibrerias.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.principalToolStripMenuItem,
+            this.libreriasToolStripMenuItem,
+            this.usuariosToolStripMenuItem,
+            this.datosDeRedToolStripMenuItem,
+            this.actividadesToolStripMenuItem});
+            this.menuStripLibrerias.Location = new System.Drawing.Point(0, 0);
+            this.menuStripLibrerias.Name = "menuStripLibrerias";
+            this.menuStripLibrerias.Size = new System.Drawing.Size(789, 34);
+            this.menuStripLibrerias.TabIndex = 6;
+            this.menuStripLibrerias.Text = "menuStrip1";
+            // 
+            // principalToolStripMenuItem
+            // 
+            this.principalToolStripMenuItem.Name = "principalToolStripMenuItem";
+            this.principalToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.principalToolStripMenuItem.Text = "Principal";
+            // 
+            // libreriasToolStripMenuItem
+            // 
+            this.libreriasToolStripMenuItem.Name = "libreriasToolStripMenuItem";
+            this.libreriasToolStripMenuItem.Size = new System.Drawing.Size(96, 30);
+            this.libreriasToolStripMenuItem.Text = "Librerias";
+            this.libreriasToolStripMenuItem.Click += new System.EventHandler(this.libreriasToolStripMenuItem_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(97, 29);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // datosDeRedToolStripMenuItem
+            // 
+            this.datosDeRedToolStripMenuItem.Name = "datosDeRedToolStripMenuItem";
+            this.datosDeRedToolStripMenuItem.Size = new System.Drawing.Size(131, 29);
+            this.datosDeRedToolStripMenuItem.Text = "Datos de red";
+            // 
+            // actividadesToolStripMenuItem
+            // 
+            this.actividadesToolStripMenuItem.Name = "actividadesToolStripMenuItem";
+            this.actividadesToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.actividadesToolStripMenuItem.Text = "Actividades";
+            // 
             // FormPrincipalLibrerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -160,12 +214,15 @@
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonAñadir);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStripLibrerias);
             this.Name = "FormPrincipalLibrerias";
             this.Text = "FormPrincipalLibrerias";
             this.Activated += new System.EventHandler(this.FormPrincipalLibrerias_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipalLibrerias_FormClosing);
             this.Load += new System.EventHandler(this.FormPrincipalLibrerias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipalLibrerias)).EndInit();
+            this.menuStripLibrerias.ResumeLayout(false);
+            this.menuStripLibrerias.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +241,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombrecontacto;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.MenuStrip menuStripLibrerias;
+        private System.Windows.Forms.ToolStripMenuItem principalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem libreriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem datosDeRedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actividadesToolStripMenuItem;
     }
 }

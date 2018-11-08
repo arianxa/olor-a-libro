@@ -13,21 +13,21 @@ namespace OlorALibro
 
     public partial class FormModificarLibreria : Form
     {
-         List<Libreria> libreria = new List<Libreria>();
-       // Libreria modlibreria;
+         //List<Libreria> libreria = new List<Libreria>();
+       Libreria modlibreria;
         public FormModificarLibreria()
         {
             InitializeComponent();
         }
-        public FormModificarLibreria(List<Libreria> libreri)//
+        public FormModificarLibreria(Libreria modlibreria)//
         {
             InitializeComponent();
-            //this.modlibreria = modlibreria;
-           libreria = libreri;
+            this.modlibreria = modlibreria;
+           //libreria = libreri;
         }
         private void FormModificarLibreria_Load(object sender, EventArgs e)
         {
-            Libreria modlibreria = new Libreria();
+           
             textBoxnombreMod.Text = modlibreria.nombre;
              textBoxtelefonoMod.Text = modlibreria.telefono.ToString();
             textBoxdireccionMod.Text = modlibreria.direccion;
@@ -39,13 +39,14 @@ namespace OlorALibro
         }
         private void buttonAceptarMod_Click(object sender, EventArgs e)
         {
-            Libreria modlibreria = new Libreria();
+           
             modlibreria.nombre = textBoxnombreMod.Text;
             modlibreria.direccion = textBoxdireccionMod.Text;
             modlibreria.telefono = int.Parse(textBoxtelefonoMod.Text);
             modlibreria.nombreContacto = textBoxnombrecontactoMod.Text;
+            this.Close();
 
-            libreria.Add(modlibreria);
+
 
         }
 
