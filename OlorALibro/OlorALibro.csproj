@@ -51,62 +51,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actividad.cs" />
-    <Compile Include="FormModificarLibreria.cs">
+    <Compile Include="Form login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormModificarLibreria.Designer.cs">
-      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    <Compile Include="Form login.Designer.cs">
+      <DependentUpon>Form login.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipalLibrerias.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipalLibrerias.Designer.cs">
-      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRellenarLibrerias.cs">
+    <Compile Include="FormPrincipal2.cs" />
+    <Compile Include="FormPrincipal2.Designer.cs">
+      <DependentUpon>FormPrincipal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioModificarActividades.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioModificarActividades.Designer.cs">
-      <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormularioActividades.Designer.cs">
-      <DependentUpon>FormularioActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioPrincipalActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRellenarLibrerias.Designer.cs">
-      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioPrincipalActividades.Designer.cs">
-      <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Libreria.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormModificarLibreria.resx">
-      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="Form login.resx">
+      <DependentUpon>Form login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipalLibrerias.resx">
-      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRellenarLibrerias.resx">
-      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioModificarActividades.resx">
-      <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioActividades.resx">
-      <DependentUpon>FormularioActividades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioPrincipalActividades.resx">
-      <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
+    <EmbeddedResource Include="FormPrincipal2.resx">
+      <DependentUpon>FormPrincipal2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,6 +92,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Jason\datosLogin.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,8 +107,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Iconos\usuario.png" />
+    <Content Include="Imatges\Olor a Libro %28amb nom%29.PNG" />
+    <Content Include="Imatges\Olor a Libro %28sense nom%29.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
