@@ -50,63 +50,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actividad.cs" />
-    <Compile Include="FormModificarLibreria.cs">
+    <Compile Include="DatosRed.cs" />
+    <Compile Include="FormDadesXarxa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormModificarLibreria.Designer.cs">
-      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    <Compile Include="FormDadesXarxa.Designer.cs">
+      <DependentUpon>FormDadesXarxa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipalLibrerias.cs">
+    <Compile Include="FormEditarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipalLibrerias.Designer.cs">
-      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
+    <Compile Include="FormEditarUsuario.Designer.cs">
+      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRellenarLibrerias.cs">
+    <Compile Include="FormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioModificarActividades.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioModificarActividades.Designer.cs">
-      <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormularioActividades.Designer.cs">
-      <DependentUpon>FormularioActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioPrincipalActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRellenarLibrerias.Designer.cs">
-      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioPrincipalActividades.Designer.cs">
-      <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Libreria.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormModificarLibreria.resx">
-      <DependentUpon>FormModificarLibreria.cs</DependentUpon>
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="FormDadesXarxa.resx">
+      <DependentUpon>FormDadesXarxa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipalLibrerias.resx">
-      <DependentUpon>FormPrincipalLibrerias.cs</DependentUpon>
+    <EmbeddedResource Include="FormEditarUsuario.resx">
+      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRellenarLibrerias.resx">
-      <DependentUpon>FormRellenarLibrerias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioModificarActividades.resx">
-      <DependentUpon>FormularioModificarActividades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioActividades.resx">
-      <DependentUpon>FormularioActividades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioPrincipalActividades.resx">
-      <DependentUpon>FormularioPrincipalActividades.cs</DependentUpon>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,9 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Iconos\usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
